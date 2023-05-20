@@ -99,7 +99,7 @@ button{
         flex-direction: column;
         /* background-color: red; */
         height: 95vh;
-        width: 80vw;
+        width: 90vw;
     }
     
     #body1 {
@@ -129,7 +129,7 @@ button{
 
     #div {
     /* background-color: blue; */
-    font-size: 0.3rem;
+    font-size: 1rem;
     /* font-weight: bolder; */
     border: none;
     width: 60vw;
@@ -138,7 +138,7 @@ button{
 
 #vid {
     /* background-color: blue; */
-    font-size: 0.3rem;
+    font-size: 1rem;
     /* font-weight: bolder; */
     border: none;
     width: 60vw;
@@ -147,7 +147,7 @@ button{
 
 #lek {
     /* background-color: blue; */
-    font-size: 0.3rem;
+    font-size: 1rem;
     /* font-weight: bolder; */
     border: none;
     width: 60vw;
