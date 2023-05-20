@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    
+    <div class="parent">
+        <div id="parentbody">
+    <div id="body1">
+    <div class="gra"><h3>Grading System in Js</h2></div>
+        <div id="scoreinput">
+            <p>English:</p>
+            <input type="text" name="" id="ab">
+        </div>
+
+        <div id="scoreinput">
+            <p>Maths:</p>
+            <input type="text" name="" id="cd">
+        </div>
+
+        <div id="scoreinput">
+            <p>Biology:</p>
+            <input type="text" name="" id="ef">
+        </div>
+
+        <div id="scoreinput">
+            <p>Physics:</p>
+            <input type="text" name="" id="gh">
+        </div>
+
+        <div id="butt">
+            <button onclick="calcu()">Total</button>
+            <button  onclick="average()">Average</button>
+            <button onclick="grade()">Grade</button>
+
+           
+        </div>
+        
+    </div>
+
+    <div id="body1">
+        <div class="gra"><h3>Total</h2></div>
+          
+  <input type="text" id="div" style="color: orange;">
+
+  <div class="gra"><h3>Average</h2></div>
+    <input type="text" id="vid" style="color: orange;">
+
+    
+  <div class="gra"><h3>Grade</h2></div>
+    <input type="text" id="lek" style="color: orange;">
+    </div>
+   </div>
+    </div>
+   
+    
+    <script>
+
+
+        function calcu() {
+            var first = Number (document.getElementById("ab").value)
+            var second = Number (document.getElementById("cd").value)
+            var third = Number (document.getElementById("ef").value)
+            var fourth =  Number (document.getElementById("gh").value)
+            var div = (document.getElementById("div"))
+            console.log (first+second+third+fourth)
+            div.value = first+second+third+fourth;
+            document.getElementById("div").value = `The total score is ${div.value}`
+        }
+
+        function average() {
+            var first = Number (document.getElementById("ab").value)
+            var second = Number (document.getElementById("cd").value)
+            var third = Number (document.getElementById("ef").value)
+            var fourth =  Number (document.getElementById("gh").value)
+            var vid = (document.getElementById("vid"))
+            console.log (first+second+third+fourth)
+            vid.value = first+second+third+fourth/4;
+            document.getElementById("vid").value=`Congratulations your average is ${vid.value}%`
+        }
+
+
+
+        function grade() {
+
+            var first = Number (document.getElementById("ab").value)
+            var second = Number (document.getElementById("cd").value)
+            var third = Number (document.getElementById("ef").value)
+            var fourth =  Number (document.getElementById("gh").value)
+            var vid = (document.getElementById("lek"))
+            console.log (first+second+third+fourth)
+            vid.value = first+second+third+fourth/4;
+            // document.getElementById("vid").value=`Congratulations your average is ${vid.value}%`
+
+
+            // var grade =document.getElementById('average').value
+
+            if (vid.value <=40) {
+                document.getElementById('lek').value = ` This is an average result, you tried keep it up!`
+            }
+            if (vid.value >=50) {
+                document.getElementById('lek').value = `This is an average result you can do better! `
+            }
+            
+            if (vid.value <=90) {
+                document.getElementById("lek").value = `This is an excellent result, keep it up!`
+            }
+            
+        }
+        
+
+
+        
+        
+    </script>
+</body>
+</html>
